@@ -10,7 +10,7 @@ My Annoy-a-Tron uses a PIC 12F683 micro-controller to generate the beeps but per
 
 To keep the power consumption low the chip spends most it time in a low power sleep state. The built in watchdog timer continues run in sleep mode and is used to wake the device up when it overflows (about every 30 seconds). A randomly initialised counter is used to count down the number of sleep periods (1 thru 32) until the next sound is to generated.
 
-When it is time to make a noise another random number determines the number of beep (1 thru 4). Then an new random sleep time is generated and the process repeats.
+When it is time to make a noise another random number determines the number of beeps (1 thru 4). Then an new random sleep count is generated and the process repeats.
 
 The complete circuit schematic is shown below, including the optional ICSP connections.
 ![Schematic](schematics/annoy-a-tron.png)
